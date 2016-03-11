@@ -18,7 +18,10 @@ This is the file the complete project aims to make: it is the Java version of th
 Only changes/differences:
 1) it is in Java
 2) it uses an extra 'bogus' element.
-E.g.: output.jar dummyarg yourprezi.pdf Prezi_poster.pdf
+E.g.: stitch_pages.jar dummyarg yourprezi.pdf Prezi_poster.pdf
 (with: yourprezi.pdf the original 16+ pages created using a specially crafted Prezi, and Prezi_poster.pdf a single pdf file of high resolution)
 
 The newest version also works without arguments: it will assume that it is in the same folder as a "yourprezi.pdf", and create or overwrite a "Posterized_Prezi.pdf".
+
+The stitched_pages.jar is also available on Gumroad:
+https://gumroad.com/l/jgpEm
