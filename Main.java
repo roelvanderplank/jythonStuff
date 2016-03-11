@@ -1,4 +1,14 @@
 // From: https://wiki.python.org/jython/JythonFaq/DistributingJythonScripts
+/*
+$ mkdir Package
+$ cd Package
+$ cp -r JYTHONROOT/Lib .
+$ unzip JYTHONROOT/jython.jar
+$ # add your modules to Lib
+$ javac ../Main.java -d .
+$ cp ../entrypoint.py .
+$ jar -cfe output.jar Main *
+*/
 import java.io.FileInputStream;
 import java.lang.System;
 import java.util.Properties;
@@ -33,6 +43,9 @@ public class Main {
     }
 
     public static void main(String[] args) throws PyException {
+	    	if ((args == null) || (args.length == 0)){
+				args = new String[]{"dummyargument","yourprezi.pdf","Posterized_Prezi.pdf"};
+			};
         PySystemState.initialize(
             PySystemState.getBaseProperties(), 
             new Properties(), args);
