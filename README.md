@@ -13,11 +13,12 @@ The other .py file is in /Package/Lib: it is pdf_stitcher.py
 This .py file is documented and copied from one of my other repositories: https://github.com/roelvanderplank/fork-of-pdf-stitcher
 - A complete PyPFD2 library.
 This is a (as of this moment yet UNaltered) fork of the original PyPDF2. See https://github.com/roelvanderplank/Fork-of-PyPDF2.
-- a java jar file: package/output.jar.
+- a java jar file: package/stitch_pages.jar.
 This is the file the complete project aims to make: it is the Java version of the "Prezi_poster_pdf_stitcher.exe" file in the following repository: https://github.com/roelvanderplank/fork-of-pdf-stitcher
 Only changes/differences:
 1) it is in Java
-2) it needs an extra 'bogus' element.
+2) it uses an extra 'bogus' element.
 E.g.: output.jar dummyarg yourprezi.pdf Prezi_poster.pdf
 (with: yourprezi.pdf the original 16+ pages created using a specially crafted Prezi, and Prezi_poster.pdf a single pdf file of high resolution)
 
+The newest version also works without arguments: it will assume that it is in the same folder as a "yourprezi.pdf", and create or overwrite a "Posterized_Prezi.pdf".
