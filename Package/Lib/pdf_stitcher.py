@@ -44,8 +44,8 @@ def main():
         print("First page is: %1.2i" % firstPage)
         first_page = True
         rows = []
-        for row in range(0,3):
-            for page in range(0,3):
+        for row in range(0,4):
+            for page in range(0,4):
                 print("Reading page %1.2i" % int(page + row + row + row + row))
                 if first_page is True:
                     output = pdf.getPage(int(firstPage + row + row + row + row + page - 1))
