@@ -1,3 +1,5 @@
+# Update: if you downloaded the stitch_pages.jar file BEFORE 6th of april: please download the newest version for better results.
+
 # jythonStuff
 Stuff needed to 'wrap' the python code using jython, in such a way that it can be used as a Java jar file!
 
